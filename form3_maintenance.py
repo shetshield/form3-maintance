@@ -134,12 +134,6 @@ with st.container() :
     st.markdown(hide_img_fs, unsafe_allow_html=True)
 st.markdown("""---""")
 
-st.sidebar.success("Select a workspace above.")
-add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
-    ("E-Mail", "Mobile phone")
-)
-
 ##### Form3 <a href="https://formlabs.com/dashboard/" target="_blank">Dashboard </a>
 buy_resin = str()
 buy_etc = str()
