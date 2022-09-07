@@ -189,54 +189,54 @@ t1, t2, t3, t4, t5, t6, = st.tabs(df_idx[0:6])
 with t1 :
     st.radio(
         label="탱크 상태",
-        options=("양호", "불량"), horizontal=True, key=1
+        options=("양호", "불량"), horizontal=True, key=1, index=0, disabled=True
     )
     t12 = st.radio(
         "탱크 수명",
-        ("양호", "초과"), horizontal=True, key=2
+        ("양호", "초과"), horizontal=True, key=2, index=0, disabled=True
     )
 with t2 :
     st.radio(
         "탱크 상태",
-        ("양호", "불량"), horizontal=True, key=3
+        ("양호", "불량"), horizontal=True, key=3, index=0, disabled=True
     )
     st.radio(
         "탱크 수명",
-        ("양호", "초과"), horizontal=True, key=4
+        ("양호", "초과"), horizontal=True, key=4, index=0, disabled=True
     )
 with t3 :
     st.radio(
         "탱크 상태",
-        ("양호", "불량"), horizontal=True, key=5
+        ("양호", "불량"), horizontal=True, key=5, index=0, disabled=True
     )
     st.radio(
         "탱크 수명",
-        ("양호", "초과"), horizontal=True, key=6
+        ("양호", "초과"), horizontal=True, key=6, index=0, disabled=True
     )
 with t4 :
     st.radio(
         "탱크 상태",
-        ("양호", "불량"), horizontal=True, key=7
+        ("양호", "불량"), horizontal=True, key=7, index=0, disabled=True
     )
     st.radio(
         "탱크 수명",
-        ("양호", "초과"), horizontal=True, key=8
+        ("양호", "초과"), horizontal=True, key=8, index=0, disabled=True
     )
 with t5 :
     st.radio(
         "탱크 상태",
-        ("양호", "불량"), horizontal=True, key=9
+        ("양호", "불량"), horizontal=True, key=9, index=0, disabled=True
     )
     st.radio(
         "탱크 수명",
-        ("양호", "초과"), horizontal=True, key=10
+        ("양호", "초과"), horizontal=True, key=10, index=1, disabled=True
     )
 with t6 :
     st.radio(
         "탱크 상태",
-        ("양호", "불량"), horizontal=True, key=11
+        ("양호", "불량"), horizontal=True, key=11, index=0, disabled=True
     )
     st.radio(
         "탱크 수명",
-        ("양호", "초과"), horizontal=True, key=12
+        ("양호", "초과"), horizontal=True, key=12, index=1, disabled=True
     )
