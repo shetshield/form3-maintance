@@ -9,9 +9,9 @@ Clear = 4
 Black = 3
 Elastic = 1
 Flexible = 1
-Rigid10K = 2
+Rigid10K = 1
 Durable = 1
-Tank = 1
+Tank = 0
 Platform = 1
 df_idx = ["Clear", "Black", "Elastic", "Flexible", "Rigid10K", "Durable", "탱크", "플랫폼"]
 IPA = 0.8
@@ -185,11 +185,12 @@ st.markdown(
     #### 개별 탱크 현황
     """
 )
+# t1 Clear / t2 Black / t3 Elastic / t4 Flexible / t5 Rigid / t6 Durable
 t1, t2, t3, t4, t5, t6, = st.tabs(df_idx[0:6])
 with t1 :
     st.radio(
         label="탱크 상태",
-        options=("양호", "불량"), horizontal=True, key=1, index=0, disabled=True
+        options=("양호", "불량"), horizontal=True, key=1, index=1, disabled=True
     )
     t12 = st.radio(
         "탱크 수명",
@@ -229,7 +230,7 @@ with t5 :
     )
     st.radio(
         "탱크 수명",
-        ("양호", "초과"), horizontal=True, key=10, index=1, disabled=True
+        ("양호", "초과"), horizontal=True, key=10, index=0, disabled=True
     )
 with t6 :
     st.radio(
