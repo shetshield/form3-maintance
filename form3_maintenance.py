@@ -7,7 +7,7 @@ import altair as alt
 
 Clear = 4
 Black = 3
-Elastic = 1
+Elastic = 3
 Flexible = 1
 Rigid10K = 1
 Durable = 1
@@ -190,7 +190,7 @@ t1, t2, t3, t4, t5, t6, = st.tabs(df_idx[0:6])
 with t1 :
     st.radio(
         label="탱크 상태",
-        options=("양호", "불량"), horizontal=True, key=1, index=1, disabled=True
+        options=("양호", "불량"), horizontal=True, key=1, index=0, disabled=True
     )
     t12 = st.radio(
         "탱크 수명",
