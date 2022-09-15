@@ -5,7 +5,7 @@ from PIL import Image
 import altair as alt
 
 
-Clear = 4
+Clear = 3
 Black = 3
 Elastic = 3
 Flexible = 1
